@@ -176,7 +176,7 @@ class SampleSettingTab extends PluginSettingTab {
 }
 
 export class UseAi {
-	private ApiKey: string = "AIzaSyBLmRx31I-7xpzSwOUJDWcB-n49trX58Ew";
+	private ApiKey: string;
 	private ai: GoogleGenAI = new GoogleGenAI({apiKey: this.ApiKey});
 
 	public async getAiResponse(query: string): Promise<string | undefined> {
